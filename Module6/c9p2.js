@@ -22,7 +22,6 @@
 function MyFun(){
     let x = document.getElementById("demo").value;
     let message = document.getElementById("Ptag");
-
     try {
         if(x.trim() == "") throw "input field is empty";
         else if ( x < 5 ) throw "number is too low";
@@ -30,11 +29,11 @@ function MyFun(){
         else{
             throw "everything is ok"
         }
+    }catch(err){
+        message.innerHTML = err;
     }
 }
-catch(err){
-    message.innerHTML = err;
-}
+
 
 
 

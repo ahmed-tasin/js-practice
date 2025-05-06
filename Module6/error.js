@@ -1,3 +1,3 @@
 import {obj} from "./module.js"
 
-console.log(obj.prof); // undefined
+console.log(obj.age); // undefined
